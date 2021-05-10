@@ -3,10 +3,10 @@ const app = express();
 // const path = require('path');
 const server = require('http').createServer(app);
 const io = require('socket.io')(server, {
-    serveClient: false,
-    cors: {
-        credentials: false
-    }
+    serveClient: false
+    // cors: {
+    //     credentials: false
+    // }
 });
 const port = process.env.PORT || 4000;
 const users = [];
